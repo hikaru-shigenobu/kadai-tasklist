@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_05_19_052241) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
-    t.bigint "user_id", default: 0, null: false
+    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_tasks_on_user_id"
   end
 
